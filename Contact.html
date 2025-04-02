@@ -34,6 +34,41 @@
 "use strict";this.default_tk=this.default_tk||{};(function(_){var window=this;
 try{
 _._F_toggles_initialize=function(a){(typeof globalThis!=="undefined"?globalThis:typeof self!=="undefined"?self:this)._F_toggles=a||[]};(0,_._F_toggles_initialize)([0x600c00, ]);
+       }catch(e){}
+  })(this);
+</script>
+
+<!-- NEW: Mobile Toggle Script -->
+<script nonce="URf_lZFvXjlSiYTSPuYNbw">
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the toggle button (Skip to navigation) using its jsname attribute
+    var toggleBtn = document.querySelector("button[jsname='ilzYPe']");
+    // Locate the secondary navigation element by its id
+    var secondaryNav = document.getElementById("WDxLfe");
+
+    if (toggleBtn && secondaryNav) {
+      // On mobile devices (width <= 768px), hide the navigation by default
+      if (window.innerWidth <= 768) {
+        secondaryNav.style.display = "none";
+      }
+      
+      // When the toggle button is clicked, toggle the display of the secondary navigation
+      toggleBtn.addEventListener("click", function () {
+        // Only toggle on mobile
+        if (window.innerWidth <= 768) {
+          if (secondaryNav.style.display === "none" || secondaryNav.style.display === "") {
+            secondaryNav.style.display = "block";
+          } else {
+            secondaryNav.style.display = "none";
+          }
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
 /*
 
  Copyright The Closure Library Authors.
