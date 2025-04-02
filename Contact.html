@@ -34,26 +34,6 @@
 "use strict";this.default_tk=this.default_tk||{};(function(_){var window=this;
 try{
 _._F_toggles_initialize=function(a){(typeof globalThis!=="undefined"?globalThis:typeof self!=="undefined"?self:this)._F_toggles=a||[]};(0,_._F_toggles_initialize)([0x600c00, ]);
-      // New script to enable mobile toggle functionality
-    document.addEventListener("DOMContentLoaded", function () {
-      // Locate the "Skip to navigation" toggle button by its jsname
-      var toggleBtn = document.querySelector("button[jsname='ilzYPe']");
-      var secondaryNav = document.getElementById("WDxLfe");
-      
-      // On mobile, ensure the secondary navigation is hidden by default
-      if (window.innerWidth <= 768) {
-        secondaryNav.style.display = "none";
-      }
-      
-      // Toggle the display of the secondary navigation when the button is clicked
-      toggleBtn.addEventListener("click", function () {
-        if (secondaryNav.style.display === "none" || secondaryNav.style.display === "") {
-          secondaryNav.style.display = "block";
-        } else {
-          secondaryNav.style.display = "none";
-        }
-      });
-    });
 /*
 
  Copyright The Closure Library Authors.
